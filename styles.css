@@ -1,0 +1,116 @@
+:root {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --border-color: #333;
+    --input-bg: #1e1e1e;
+    --button-bg: #007bff;
+    --button-hover-bg: #0056b3;
+    --success-color: #28a745;
+    --error-color: #dc3545;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+}
+.container {
+    width: 100%;
+    max-width: 900px;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+textarea, #outputJson {
+    width: 100%;
+    min-height: 150px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    background-color: var(--input-bg);
+    color: var(--text-color);
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    resize: vertical;
+}
+.options {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.options button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: var(--button-bg);
+    color: #fff;
+    transition: background-color 0.3s;
+}
+.options button:hover {
+    background-color: var(--button-hover-bg);
+}
+.output-section {
+    margin-top: 20px;
+}
+.output-section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+    color: #e0e0e0;
+}
+.output-box {
+    background-color: var(--input-bg);
+    border: 1px solid var(--border-color);
+    padding: 15px;
+    border-radius: 5px;
+    min-height: 50px;
+    overflow-x: auto;
+    position: relative;
+}
+.copy-btn {
+    padding: 5px 10px;
+    background-color: var(--button-bg);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px;
+    display: none; /* Mặc định ẩn, sẽ hiển thị khi set 'block' */
+}
+.copy-btn[style*="display: block"] {
+    display: block !important; /* Đảm bảo hiển thị khi JavaScript set */
+}
+.status-message {
+    text-align: center;
+    margin-top: 10px;
+    font-weight: bold;
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+    .options {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .options button {
+        padding: 12px 24px;
+        font-size: 18px;
+    }
+    textarea, #outputJson {
+        min-height: 120px;
+    }
+}
