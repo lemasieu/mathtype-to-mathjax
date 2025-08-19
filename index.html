@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Công cụ chuyển đổi MathType sang MathJax</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" async></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Công cụ chuyển đổi MathType sang MathJax</h1>
+        <p>Nhập công thức MathType (dạng LaTeX 2.09 and later) vào ô bên dưới. Mã sẽ được làm sạch trước khi chuyển đổi.</p>
+        <textarea id="latexInput" placeholder="Nhập mã LaTeX ở đây..."></textarea>
+        <div class="options">
+            <button>Chuyển đổi sang HTML</button>
+            <button>Chuyển đổi sang JSON</button>
+            <button class="copy-btn" id="copyBtn" onclick="copyOutput()">Sao chép kết quả</button>
+        </div>
+        <div class="output-section">
+            <h2>Kết quả</h2>
+            <div class="output-box" id="outputContainer"></div>
+            <div class="status-message" id="statusMessage"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
