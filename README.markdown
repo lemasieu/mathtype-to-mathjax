@@ -3,7 +3,7 @@
 A simple web tool to convert MathType LaTeX code into embeddable MathJax-compatible HTML or JSON format.
 
 ## Demo
-Check out the live demo here: [https://xn--msieu-goa8b.vn/github/mathtype-to-mathjax](https://xn--msieu-goa8b.vn/github/mathtype-to-mathjax)
+Check out the live demo here: https://xn--msiu-goa8b.vn/github/mathtype-to-mathjax/
 
 ## Features
 - Convert MathType-generated LaTeX code to clean HTML for MathJax rendering.
@@ -38,6 +38,3 @@ Feel free to fork this repository, submit issues, or send pull requests to impro
 
 ## License
 This project is open-source. See the [LICENSE](LICENSE) file for details (add your preferred license, e.g., MIT).
-
-## Author
-- Lê Mẫn Siêu (lemasieu)
